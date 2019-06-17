@@ -1,0 +1,14 @@
+name: gaia
+version: 0.1
+description: Plant managment plugin
+load: STARTUP
+author: psygate
+main: com.psygate.minecraft.spigot.sovereignty.gaia.Gaia
+database: false
+depends: [nucleus]
+
+commands:
+  storetree:
+    default: op
+    usage: storetree <tree_name>
+    description: stores the next tree you punch.

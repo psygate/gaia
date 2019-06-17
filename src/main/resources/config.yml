@@ -1,0 +1,542 @@
+!!com.psygate.minecraft.spigot.sovereignty.gaia.configuration.yamlmirror.GaiaConfiguration
+dontHandle:
+- GRASS
+
+groupDefinitions:
+  - biomes:
+    - !!org.bukkit.block.Biome 'SWAMPLAND'
+    - !!org.bukkit.block.Biome 'SWAMPLAND_MOUNTAINS'
+    name: Swampland
+  - biomes:
+    - !!org.bukkit.block.Biome 'FOREST'
+    name: Forest_oak
+  - biomes:
+    - !!org.bukkit.block.Biome 'BIRCH_FOREST'
+    - !!org.bukkit.block.Biome 'BIRCH_FOREST_HILLS'
+    - !!org.bukkit.block.Biome 'BIRCH_FOREST_MOUNTAINS'
+    - !!org.bukkit.block.Biome 'BIRCH_FOREST_HILLS_MOUNTAINS'
+    name: Forest_Birch
+  - biomes:
+    - !!org.bukkit.block.Biome 'ROOFED_FOREST'
+    - !!org.bukkit.block.Biome 'ROOFED_FOREST_MOUNTAINS'
+    name: Forest_Roofed
+  - biomes:
+    - !!org.bukkit.block.Biome 'FOREST_HILLS'
+    - !!org.bukkit.block.Biome 'FLOWER_FOREST'
+    name: Forest_Border
+  - biomes:
+    - !!org.bukkit.block.Biome 'TAIGA'
+    - !!org.bukkit.block.Biome 'TAIGA_HILLS'
+    - !!org.bukkit.block.Biome 'COLD_TAIGA'
+    - !!org.bukkit.block.Biome 'COLD_TAIGA_HILLS'
+    - !!org.bukkit.block.Biome 'MEGA_TAIGA'
+    - !!org.bukkit.block.Biome 'MEGA_TAIGA_HILLS'
+    - !!org.bukkit.block.Biome 'TAIGA_MOUNTAINS'
+    - !!org.bukkit.block.Biome 'COLD_TAIGA_MOUNTAINS'
+    - !!org.bukkit.block.Biome 'MEGA_SPRUCE_TAIGA'
+    - !!org.bukkit.block.Biome 'MEGA_SPRUCE_TAIGA_HILLS'
+    name: Taiga
+  - biomes:
+    - !!org.bukkit.block.Biome 'DESERT'
+    - !!org.bukkit.block.Biome 'DESERT_HILLS'
+    - !!org.bukkit.block.Biome 'DESERT_MOUNTAINS'
+    name: Deserts
+  - biomes:
+    - !!org.bukkit.block.Biome 'PLAINS'
+    name: Plains
+  - biomes:
+    - !!org.bukkit.block.Biome 'HELL'
+    name: Nether
+  - biomes:
+    - !!org.bukkit.block.Biome 'SKY'
+    name: aether
+  - biomes:
+    - !!org.bukkit.block.Biome 'EXTREME_HILLS'
+    - !!org.bukkit.block.Biome 'SMALL_MOUNTAINS'
+    - !!org.bukkit.block.Biome 'EXTREME_HILLS_PLUS'
+    - !!org.bukkit.block.Biome 'EXTREME_HILLS_MOUNTAINS'
+    - !!org.bukkit.block.Biome 'EXTREME_HILLS_PLUS_MOUNTAINS'
+    name: Hills
+  - biomes:
+    - !!org.bukkit.block.Biome 'ICE_PLAINS'
+    - !!org.bukkit.block.Biome 'ICE_MOUNTAINS'
+    - !!org.bukkit.block.Biome 'ICE_PLAINS_SPIKES'
+    name: Iceplains
+  - biomes:
+    - !!org.bukkit.block.Biome 'MUSHROOM_ISLAND'
+    - !!org.bukkit.block.Biome 'MUSHROOM_SHORE'
+    name: Mushrooms
+  - biomes:
+    - !!org.bukkit.block.Biome 'JUNGLE'
+    - !!org.bukkit.block.Biome 'JUNGLE_HILLS'
+    - !!org.bukkit.block.Biome 'JUNGLE_EDGE'
+    - !!org.bukkit.block.Biome 'JUNGLE_MOUNTAINS'
+    - !!org.bukkit.block.Biome 'JUNGLE_EDGE_MOUNTAINS'
+    name: Forest_jungle
+  - biomes:
+    - !!org.bukkit.block.Biome 'SAVANNA'
+    - !!org.bukkit.block.Biome 'SAVANNA_PLATEAU'
+    - !!org.bukkit.block.Biome 'SAVANNA_MOUNTAINS'
+    - !!org.bukkit.block.Biome 'SAVANNA_PLATEAU_MOUNTAINS'
+    name: Savanna
+  - biomes:
+    - !!org.bukkit.block.Biome 'MESA'
+    - !!org.bukkit.block.Biome 'MESA_PLATEAU_FOREST'
+    - !!org.bukkit.block.Biome 'MESA_PLATEAU'
+    - !!org.bukkit.block.Biome 'MESA_BRYCE'
+    - !!org.bukkit.block.Biome 'MESA_PLATEAU_FOREST_MOUNTAINS'
+    - !!org.bukkit.block.Biome 'MESA_PLATEAU_MOUNTAINS'
+    name: Mesa
+  - biomes:
+    - !!org.bukkit.block.Biome 'SUNFLOWER_PLAINS'
+    name: Sunflowers
+  - biomes:
+    - !!org.bukkit.block.Biome 'RIVER'
+    - !!org.bukkit.block.Biome 'BEACH'
+    - !!org.bukkit.block.Biome 'STONE_BEACH'
+    name: Water_coast
+
+groupSettings:
+  Plains:
+    inherit: none
+    plantSettings:
+      wheat:
+        acceleration: 15%
+        accelerator: CLAY
+        failureRate: 2%
+        growthTime: 12h
+        inherit: none
+        maxAccelerators: 4
+        maxLightLevel: 128
+        minLightLevel: 5
+        requireSkyLight: true
+        rotsAfter: 24h
+      carrot:
+        inherit: wheat
+        growthTime: 24h
+        rotsAfter: 48h
+      potato:
+        inherit: wheat
+        growthTime: 48h
+        rotsAfter: 96h
+      brownmushroom:
+        inherit: none
+        minLightLevel: 0
+        maxLightLevel: 12
+        requireSkyLight: false
+        growthTime: 24h
+        rotsAfter: 48h
+        failureRate: 50%
+        # Placeholder. This will never match a block.
+        accelerator: STICK
+        acceleration: 0%
+        maxAccelerators: 0
+      redmushroom:
+        inherit: brownmushroom
+      melon:
+        inherit: none
+        minLightLevel: 7
+        maxLightLevel: 128
+        requireSkyLight: true
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 100%
+        rotsAfter: 9223372036854775807
+      pumpkin:
+        inherit: none
+        minLightLevel: 7
+        maxLightLevel: 128
+        requireSkyLight: true
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 100%
+        rotsAfter: 9223372036854775807
+      sugarcane:
+        inherit: none
+        minLightLevel: 7
+        maxLightLevel: 128
+        requireSkyLight: true
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 100%
+        rotsAfter: 9223372036854775807
+      cocoa:
+        inherit: none
+        minLightLevel: 0
+        maxLightLevel: 128
+        requireSkyLight: false
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 100%
+        rotsAfter: 9223372036854775807
+      cactus:
+        inherit: none
+        minLightLevel: 0
+        maxLightLevel: 128
+        requireSkyLight: true
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 100%
+        rotsAfter: 9223372036854775807
+      vines:
+        inherit: none
+        minLightLevel: 0
+        maxLightLevel: 128
+        requireSkyLight: false
+        growthTime: 6h
+        failureRate: 0%
+        rotsAfter: 9223372036854775807
+        # Placeholder. This will never match a block.
+        accelerator: STICK
+        acceleration: 0%
+        maxAccelerators: 0
+      oak:
+        inherit: none
+        minLightLevel: 7
+        maxLightLevel: 128
+        requireSkyLight: false
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 50%
+        rotsAfter: 9223372036854775807
+      spruce:
+        inherit: none
+        minLightLevel: 7
+        maxLightLevel: 128
+        requireSkyLight: false
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 100%
+        rotsAfter: 9223372036854775807
+      acacia:
+        inherit: oak
+      birch:
+        inherit: none
+        minLightLevel: 7
+        maxLightLevel: 128
+        requireSkyLight: false
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 100%
+        rotsAfter: 9223372036854775807
+      jungle:
+        inherit: none
+        minLightLevel: 7
+        maxLightLevel: 128
+        requireSkyLight: false
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 100%
+        rotsAfter: 9223372036854775807
+      darkoak:
+        inherit: oak
+  Savanna:
+    inherit: plains
+    plantSettings:
+      carrot:
+        failureRate: 25%
+      potato:
+        failureRate: 25%
+      brownmushroom:
+        failureRate: 100%
+      redmushroom:
+        failureRate: 100%
+      cactus:
+        acceleration: 15%
+        accelerator: CLAY
+        failureRate: 50%
+        growthTime: 24h
+        inherit: none
+        maxAccelerators: 4
+        maxLightLevel: 128
+        minLightLevel: 5
+        requireSkyLight: true
+      acacia:
+        failureRate: 2%
+      darkoak:
+        failureRate: 100%
+
+  Forest_oak:
+    inherit: plains
+    plantSettings:
+      wheat:
+        failureRate: 25%
+      carrot:
+        failureRate: 2%
+      potato:
+        failureRate: 50%
+      redmushroom:
+        failureRate: 100%
+      oak:
+        failureRate: 2%
+      spruce:
+        failureRate: 50%
+      birch:
+        failureRate: 25%
+      jungle:
+        failureRate: 50%
+      darkoak:
+        failureRate: 25%
+
+  Forest_Birch:
+    inherit: Forest_oak
+    plantSettings:
+      oak:
+        failureRate: 25%
+      spruce:
+        failureRate: 100%
+      birch:
+        failureRate: 2%
+      jungle:
+        failureRate: 100%
+      acacia:
+        failureRate: 100%
+      darkoak:
+        failureRate: 50%
+  Forest_Roofed:
+    inherit: Forest_oak
+    plantSettings:
+      oak:
+        failureRate: 25%
+      spruce:
+        failureRate: 100%
+      birch:
+        failureRate: 25%
+      jungle:
+        failureRate: 100%
+      acacia:
+        failureRate: 100%
+      darkoak:
+        failureRate: 2%
+  Taiga:
+    inherit: Forest_oak
+    plantSettings:
+      wheat:
+        failureRate: 50%
+      carrot:
+        failureRate: 50%
+      potato:
+        failureRate: 2%
+      pumpkin:
+        acceleration: 15%
+        accelerator: CLAY
+        failureRate: 2%
+        growthTime: 24h
+        inherit: none
+        maxAccelerators: 4
+        maxLightLevel: 128
+        minLightLevel: 5
+        requireSkyLight: true
+        rotsAfter: 48h
+      brownmushroom:
+        failureRate: 100%
+      oak:
+        failureRate: 50%
+      spruce:
+        failureRate: 2%
+      birch:
+        failureRate: 25%
+      jungle:
+        failureRate: 100%
+      acacia:
+        failureRate: 100%
+      darkoak:
+        failureRate: 25%
+  Forest_jungle:
+    inherit: Forest_oak
+    plantSettings:
+      wheat:
+        failureRate: 50%
+      carrot:
+        failureRate: 50%
+      potato:
+        failureRate: 100%
+      melon:
+        acceleration: 15%
+        accelerator: CLAY
+        failureRate: 2%
+        growthTime: 24h
+        inherit: none
+        maxAccelerators: 4
+        maxLightLevel: 128
+        minLightLevel: 5
+        requireSkyLight: true
+        rotsAfter: 48h
+      brownmushroom:
+        failureRate: 100%
+      redmushroom:
+        failureRate: 100%
+      sugarcane:
+        acceleration: 15%
+        accelerator: CLAY
+        failureRate: 50%
+        growthTime: 24h
+        inherit: none
+        maxAccelerators: 4
+        maxLightLevel: 128
+        minLightLevel: 5
+        requireSkyLight: true
+      cocoa:
+        growthTime: 24h
+        inherit: none
+        maxLightLevel: 128
+        minLightLevel: 0
+        requireSkyLight: true
+      oak:
+        failureRate: 50%
+      spruce:
+        failureRate: 100%
+      birch:
+        failureRate: 100%
+      jungle:
+        failureRate: 2%
+      acacia:
+        failureRate: 100%
+      darkoak:
+        failureRate: 100%
+  Swampland:
+    inherit: Forest_jungle
+    plantSettings:
+      potato:
+        failureRate: 50%
+      melon:
+        failureRate: 25%
+      sugarcane:
+        failureRate: 2%
+      cocoa:
+        failureRate: 100%
+      oak:
+        failureRate: 25%
+      birch:
+        failureRate: 50%
+      jungle:
+        failureRate: 50%
+      acacia:
+        failureRate: 50%
+      darkoak:
+        failureRate: 50%
+  Hills:
+    inherit: Taiga
+    plantSettings:
+      potato:
+        failureRate: 50%
+      pumpkin:
+        failureRate: 50%
+      brownmushroom:
+        failureRate: 50%
+      spruce:
+        failureRate: 25%
+      birch:
+        failureRate: 50%
+      darkoak:
+        failureRate: 100%
+  Mushrooms:
+    inherit: none
+    plantSettings:
+      brownmushroom:
+        inherit: none
+        minLightLevel: 0
+        maxLightLevel: 12
+        requireSkyLight: false
+        growthTime: 24h
+        rotsAfter: 48h
+        failureRate: 2%
+        # Placeholder. This will never match a block.
+        accelerator: STICK
+        acceleration: 0%
+        maxAccelerators: 0
+        rotsAfter: 9223372036854775807
+      redmushroom:
+        inherit:        brownmushroom
+
+  Mesa:
+    inherit: none
+    plantSettings:
+      cactus:
+        acceleration: 15%
+        accelerator: CLAY
+        failureRate: 2%
+        growthTime: 24h
+        inherit: none
+        maxAccelerators: 4
+        maxLightLevel: 128
+        minLightLevel: 5
+        requireSkyLight: true
+        # Placeholder. This will never match a block.
+        accelerator: STICK
+        acceleration: 0%
+        maxAccelerators: 0
+        rotsAfter: 9223372036854775807
+  Deserts:
+    inherit: Mesa
+  Iceplains:
+    inherit: none
+    plantSettings:
+      oak:
+        inherit: none
+        minLightLevel: 7
+        maxLightLevel: 128
+        requireSkyLight: false
+        accelerator: CLAY
+        maxAccelerators: 4
+        acceleration: 15%
+        growthTime: 24h
+        failureRate: 50%
+        # Placeholder. This will never match a block.
+        accelerator: STICK
+        acceleration: 0%
+        maxAccelerators: 0
+        rotsAfter: 9223372036854775807
+      birch:
+        inherit: oak
+
+  Sunflowers:
+    inherit: plains
+    plantSettings:
+      wheat:
+        failureRate: 25%
+      carrot:
+        failureRate: 25%
+      potato:
+        failureRate: 25%
+  Forest_Border:
+    inherit: Forest_oak
+  Nether:
+    inherit: none
+    plantSettings:
+      netherwart:
+        inherit: none
+        minLightLevel: 0
+        maxLightLevel: 128
+        requireSkyLight: false
+        growthTime: 48h
+        failureRate: 0%
+        # Placeholder. This will never match a block.
+        accelerator: STICK
+        acceleration: 0%
+        maxAccelerators: 0
+        rotsAfter: 9223372036854775807
+
+  Water_coast:
+    inherit: swampland
+    plantSettings:
+      melon:
+        failureRate: 50%
